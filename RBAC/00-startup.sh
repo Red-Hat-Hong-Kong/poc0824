@@ -1,3 +1,8 @@
+hkex-admin
+hkex-leader
+hkex-developer
+hkex-qa-engineer
+
 oc login -u hkex-admin -p nopass https://api.hkexpoc.redhathk.com:6443
 
 oc get clusterrolebinding -o wide \
@@ -15,7 +20,7 @@ oc get clusterrolebinding -o wide \
 
 oc login -u hkex-leader -p nopass
 
-oc new-project test
+oc new-project hkex-test
 
 oc login -u hkex-admin -p nopass
 
