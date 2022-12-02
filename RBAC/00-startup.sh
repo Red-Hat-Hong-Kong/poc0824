@@ -46,13 +46,13 @@ oc policy add-role-to-group view qa-group -n authorization-rbac
 
 oc get rolebindings -o wide
 
-oc login -u hkex-developer -p developer
+oc login -u hkex-developer -p nopass
 
 oc new-app --name httpd httpd:2.4 -n authorization-rbac
 
 oc policy add-role-to-user edit hkex-qa-engineer
 
-oc login -u qa-engineer -p nopass
+oc login -u hkex-qa-engineer -p nopass
 
 oc scale deployment httpd --replicas 3
 
