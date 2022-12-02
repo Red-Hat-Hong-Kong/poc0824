@@ -3,7 +3,7 @@ hkex-leader
 hkex-developer
 hkex-qa-engineer
 
-oc login -u hkex-admin -p nopass https://api.hkexpoc.redhathk.com:6443
+oc login -u hkex-admin -p nopass https://api.cluster-5s5cn.5s5cn.sandbox2228.opentlc.com:6443
 
 oc get clusterrolebinding -o wide \
     | grep -E 'NAME|self-provisioner'
